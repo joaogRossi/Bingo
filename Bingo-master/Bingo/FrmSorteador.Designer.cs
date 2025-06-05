@@ -55,6 +55,7 @@
             btCancelar.TabIndex = 1;
             btCancelar.Text = "&Cancelar";
             btCancelar.UseVisualStyleBackColor = true;
+            btCancelar.Click += btCancelar_Click;
             // 
             // btHistorico
             // 
@@ -65,6 +66,7 @@
             btHistorico.TabIndex = 2;
             btHistorico.Text = "&Histórico sorteado";
             btHistorico.UseVisualStyleBackColor = true;
+            btHistorico.Click += btHistorico_Click;
             // 
             // lblNumero
             // 
@@ -85,6 +87,7 @@
             Controls.Add(btProximo);
             Name = "FrmSorteador";
             Text = "Sorteador";
+            FormClosing += FrmSorteador_FormClosing;
             ResumeLayout(false);
         }
 
